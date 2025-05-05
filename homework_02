@@ -1,0 +1,103 @@
+#desicison Mechanisim
+#python'da karar mekanizmalari olusturmak icin if-elif-else bloklari yada match-case bloklari kulanilir.
+from calendar import month
+
+x= int(input('Tam Sayi: '))
+
+# bir sayinin 2'ye bolumunden kalani bulmak istiyorsak mod islemini yapiyoruz. python'da mod icin "%" senbolu kulanilir
+
+sonuc= x % 2
+
+#phyton'da karsilastirma oporatoru "==" cift esitlik senboludur.
+# yani sag taraftaki deger sol taraafaki degere esit mi diye bakmak icin.
+
+if sonuc == 0: # eger burdaki sart tutarsa altaki kod gerceklesir eger tutmasa bir diyer coda gecer
+    print(f'{x} cifttir...!')
+
+else:
+    print(f'{x} tektir...!')
+
+
+
+
+int(input("bir sayi: "))
+
+sonuc = x * 1
+if sonuc >0:
+    print(f'{x} positiftir')
+elif sonuc == 0:
+    print(f'{x} notur')
+else:
+    print(f'{x} negatiftir')
+
+#odev
+#Githhub nedir? okuma odevi
+#birinci ve ikinci odevi github a yukleyin
+#kulanicidan iki adet sayi alalim ve bu sayilardan buyuk olani ekrana yazdiralim
+#kulanicilardan mevsim bilgisini aliyoruz ve alinan mevsimin aylarini ekrana yazdiriyoruz
+
+number_1=int(input("please type the number 1:"))
+number_2=int(input("please type the number 2:"))
+
+if number_1 >number_2:
+    print(f'{number_1} is bigger')
+elif number_2 >number_1:
+    print(f'{number_2}is bigger')
+else:
+    int(input("number_1 and number_2 is equal"))
+
+mevsim = input('mevsim giriniz: ')
+
+if mevsim == 'kis':
+    print('aralik,ocak,subat')
+elif mevsim == 'ilkbahar':
+    print('mart,nisan,mayis')
+elif mevsim== 'yaz':
+    print('haziran,temuz,agustos')
+elif mevsim=='sonbahar':
+    print('eylul,ekim,kasim')
+else:
+    print('hatali bilgi girdiniz')
+
+
+match mevsim:
+    case 'kis':
+        print('aralik,ocak,subat')
+    case 'ilkbahar':
+        print('mart,nisan,mayis')
+    case'yaz':
+        print('haziran,temmuz,agustos')
+    case'sonbahar':
+        print('eylul,ekim,kasim')
+    case _:
+        print ('hatali bilgi')
+
+user_name=input('user name: ').lower()
+if user_name == 'beast':
+    print(f'hosgeldin,{user_name}')
+else:
+    print('hatali bilgi')
+
+match user_name:
+    case 'beast':
+        print(f'hosgeldin,{user_name}')
+    case _:
+        print ('hatali kulanici adi')
+
+exam_1=float(input('exam 1: '))
+exam_2=float(input('exam 2: '))
+home_work= float(input('homework: '))
+
+avg = exam_1 * 0.4 + exam_2 * 0.4 + home_work * 0.2
+
+if avg > 50:
+    print('gectiniz')
+else:
+    print('kaldin')
+
+age=int(input('please type your age: '))
+
+if age >= 18:
+    print('you can play')
+else:
+    print('you can not')
