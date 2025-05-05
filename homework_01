@@ -1,0 +1,89 @@
+
+#Varabile (degisken)
+# In the row below we assagin value to "x" with "="
+x = 3
+y = 5
+# we add "x" and "y" and we assagin it to "toplam"
+toplam = y + x
+print(toplam)
+
+x = 5 # int
+z=3.14 # float
+full_name= 'mike tyson' # string
+
+# kulanicidan 2 adet tam sayi allalim. bu 2 tam sayiyi temel 4 isleme yapalim ve sonuclari ekrana yazalim
+#kulanicisan input() fonksuyonuyla deger aldigimizda
+number_1 = int(input("please type a number: "))
+number_2 = int(input("please type a number: "))
+
+toplam = number_1 + number_2
+cikarma = number_1 - number_2
+bolme = number_1 / number_2
+carpma = number_1 * number_2
+print(f"result {toplam}")
+print(f"result{cikarma}")
+print(f"result{carpma}")
+print(f"result{bolme}")
+# soru: karenin alanini ve cevriesini bulan uygulamayi yazalim
+egde = int(input("Edge: "))
+
+
+
+
+premeter = 4 * egde
+area = egde * egde
+
+print(f'Premeter: {premeter}')
+print(f"Area: {area}")
+
+
+
+egde_number_1=int(input("please type a number:"))
+egde_number_2=int(input("please type a number:"))
+premeter= (egde_number_1 + egde_number_2) * 2
+area= egde_number_1 * egde_number_2
+print(f'Premeter: {premeter}')
+print(f'area: {area}')
+
+# odev
+
+#ucgenin alanini hesaplayin
+
+#dairenin alanini ve cevresini hesaplayan uygulamayi yazin
+
+# 1. dereceden 2 bilinmiyenli denklem hesaplayan uygulamayi yazin.
+
+#silindirin hacmini hesaplayan uygulamayi yazin.
+
+bottom_egde=int(input("please type a number"))
+height=int(input("please type a number"))
+area= (bottom_egde * height) / 2
+print(f'area: {area}')
+
+radius=int(input("please type the radius:"))
+area= (radius * radius) * 3.14
+perimeter=(radius * 2) * 3.14
+print(f"area: {area}")
+print(f"perimeter:{perimeter}")
+
+perimeter=int(input("please type the radius:"))
+height=int(input("please type the height:"))
+area= (radius * radius) * 3.14
+volume= (area * height)
+print(f"volume: {volume}")
+
+#if determind == 0:
+#    print("cozum yok")
+#else:
+#    a=(c1*b2-c2*b1) / determind
+#    b= (a1 * c2 - a2 *c1) / determind
+#
+#    print(f'a:{a}')
+#    print(f'b: {b}'
+
+# silindiein hacmini hesaplayan uygulama (islemi peintin icinde yapma)
+
+r=float(input('yari cap'))
+h= float(input("yukseklik"))
+
+print(f'Hacim: {3.14* r ** 2 * h}')
